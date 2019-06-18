@@ -19,7 +19,7 @@ class NestedSet
     /**
      * The name of default parent id column.
      */
-    const PARENT_ID = 'parent_id';
+    const PARENT_ID = 'category_parent_id';
 
     /**
      * Insert direction.
