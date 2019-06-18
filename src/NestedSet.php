@@ -17,11 +17,6 @@ class NestedSet
     const RGT = '_rgt';
 
     /**
-     * The name of default parent id column.
-     */
-    const PARENT_ID = 'category_parent_id';
-
-    /**
      * Insert direction.
      */
     const BEFORE = 1;
@@ -40,7 +35,6 @@ class NestedSet
     {
         $table->unsignedInteger(self::LFT)->default(0);
         $table->unsignedInteger(self::RGT)->default(0);
-        $table->unsignedInteger(self::PARENT_ID)->nullable();
 
         $table->index(static::getDefaultColumns());
     }
